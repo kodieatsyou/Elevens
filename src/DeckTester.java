@@ -8,10 +8,15 @@ public class DeckTester {
 	 *	@param args is not used.
 	 */
 	public static void main(String[] args) {
-		String[] ranks = {"jack", "queen", "king"};
-		String[] suits = {"blue", "red"};
-		int[] pointValues = {11, 12, 13};
-		Deck d = new Deck(ranks, suits, pointValues);
+//		String[] ranks = {"jack", "queen", "king"};
+//		String[] suits = {"blue", "red"};
+//		int[] pointValues = {11, 12, 13};
+//		Deck d = new Deck(ranks, suits, pointValues);
+		
+		String [] ranks2 = {"2", "3", "4", "5", "6", "7", "8", "9", "10","Jack", "Queen", "King", "Ace"};
+		String [] suits2 = {"Spades", "Hearts", "Diamonds", "Clubs"};
+		int [] pointValues2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 11 ,11};
+		Deck d = new Deck(ranks2, suits2, pointValues2);
 
 		System.out.println("**** Original Deck Methods ****");
 		System.out.println("  toString:\n" + d.toString());
@@ -51,6 +56,6 @@ public class DeckTester {
 		System.out.println();
 		System.out.println();
 
-		/* *** TO BE COMPLETED IN ACTIVITY 4 *** */
+
 	}
 }
