@@ -44,8 +44,8 @@ public class Shuffler {
 		}
 		System.out.println();
 		System.out.println(flip());
-		int[] permutation1 = {1, 2, 4, 6, 3, 8, 7, 9 ,5, 11};
-		int[] permutation2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		int[] permutation1 = {1, 2, 3};
+		int[] permutation2 = {1, 2, 3, 4};
 		System.out.println(arePermutations(permutation1, permutation2));
 	}
 
@@ -106,8 +106,8 @@ public class Shuffler {
 	public static boolean arePermutations(int[] a1, int[] a2) {
 		Arrays.sort(a1);
 		Arrays.sort(a2);
+		if(a1.length != a2.length) return false;
 		for(int i = 0; i <= a1.length - 1; i++) {
-			System.out.println(a2[i]);
 			if(a1[i] != a2[i]) return false; 
 		}
 		return true;
